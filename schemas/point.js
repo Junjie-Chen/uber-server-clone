@@ -12,3 +12,5 @@ const pointSchema = new Schema({
     required: true
   }
 });
+
+module.exports = pointSchema;
