@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const pointSchema = new Schema({
   type: {
     type: String,
-    enum: ['Point']
+    enum: ['Point'],
+    required: true
   }
 });
