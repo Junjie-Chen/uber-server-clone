@@ -4,6 +4,7 @@
   "description": "_A server clone of Uber that manipulates the drivers collection by creating, finding, editing and deleting a driver using MongoDB and Mongoose_",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
