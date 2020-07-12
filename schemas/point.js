@@ -7,5 +7,8 @@ const pointSchema = new Schema({
     enum: ['Point'],
     required: true
   },
-  coordinates: [Number]
+  coordinates: {
+    type: [Number],
+    required: true
+  }
 });
