@@ -1,0 +1,20 @@
+{
+  "name": "uber-server-clone",
+  "version": "1.0.0",
+  "description": "_A server clone of Uber that manipulates the drivers collection by creating, finding, editing and deleting a driver using MongoDB and Mongoose_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junjie-Chen/uber-server-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junjie-Chen/uber-server-clone/issues"
+  },
+  "homepage": "https://github.com/Junjie-Chen/uber-server-clone#readme"
+}
