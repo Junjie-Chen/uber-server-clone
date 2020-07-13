@@ -16,3 +16,5 @@ const driverSchema = new Schema({
     index: '2dsphere'
   }
 });
+
+const Driver = mongoose.model('Driver', driverSchema);
