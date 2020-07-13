@@ -5,5 +5,6 @@ const driverSchema = new Schema({
   email: {
     type: String,
     required: true
-  }
+  },
+  driving: Boolean
 });
