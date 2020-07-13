@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const pointSchema = require('../schemas/point');
 
 const driverSchema = new Schema({
   email: {
@@ -9,5 +10,6 @@ const driverSchema = new Schema({
   driving: {
     type: Boolean,
     default: false
-  }
+  },
+  location: pointSchema
 });
