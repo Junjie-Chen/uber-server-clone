@@ -17,5 +17,12 @@ module.exports = {
     })
       .then(drivers => res.send(drivers))
       .catch(next);
+  },
+  create(req, res, next) {
+    const driver = req.body;
+
+    Driver.create(driver)
+      .then(driver => res.send(driver))
+      .catch(next);
   }
 };
