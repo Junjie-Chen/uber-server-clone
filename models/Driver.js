@@ -11,5 +11,8 @@ const driverSchema = new Schema({
     type: Boolean,
     default: false
   },
-  location: pointSchema
+  location: {
+    type: pointSchema,
+    index: '2dsphere'
+  }
 });
