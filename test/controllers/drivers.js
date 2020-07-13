@@ -35,4 +35,21 @@ describe('The drivers controller', () => {
           });
       });
   });
+
+  it('should handle a POST request to /api/drivers to create a driver', done => {
+    Driver.estimatedDocumentCount()
+      .then(count => {
+        request(app)
+          .post('/api/drivers')
+          .send({ email: 'test@gmail.com' })
+          .end(() => {
+            Driver.estimatedDocumentCount()
+              .then(newCount => {
+                expect(count + 1).to.equal(newCount);
+
+                done();
+              });
+          });
+      });
+  });
 });
