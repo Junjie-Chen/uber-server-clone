@@ -52,4 +52,26 @@ describe('The drivers controller', () => {
           });
       });
   });
+
+  it('should handle a PUT request to /api/drivers/:id to edit a driver', done => {
+    const driver = new Driver({
+      email: 'test@gmail.com',
+      driving: false
+    });
+
+    driver.save()
+      .then(() => {
+        request(app)
+          .put(`/api/drivers/${driver._id}`)
+          .send({ driving: true })
+          .end(() => {
+            Driver.findOne({ email: 'test@gmail.com' })
+              .then(driver => {
+                expect(driver.driving).to.be.true;
+
+                done();
+              });
+          });
+      });
+  });
 });
