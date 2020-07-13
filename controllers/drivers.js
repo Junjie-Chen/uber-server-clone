@@ -24,5 +24,15 @@ module.exports = {
     Driver.create(driver)
       .then(driver => res.send(driver))
       .catch(next);
+  },
+  edit(req, res, next) {
+    const id = req.params.id;
+
+    const driver = req.body;
+
+    Driver.updateOne({ _id: id }, driver)
+      .then(() => Driver.findOne({ _id: id }))
+      .then(driver => res.send(driver))
+      .catch(next);
   }
 };
