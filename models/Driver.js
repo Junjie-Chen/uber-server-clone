@@ -6,5 +6,8 @@ const driverSchema = new Schema({
     type: String,
     required: true
   },
-  driving: Boolean
+  driving: {
+    type: Boolean,
+    default: false
+  }
 });
