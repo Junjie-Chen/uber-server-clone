@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Junjie-Chen/uber-server-clone#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   },
